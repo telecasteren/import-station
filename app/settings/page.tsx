@@ -16,44 +16,68 @@ export default function Settings() {
 
         <h1 className="text-4xl">Settings</h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md border border-solid hover:border-transparent flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#031D64] hover:text-white dark:hover:bg-[#205a83] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="/uploader/"
-            target="_self"
-            rel="noopener noreferrer"
+        <div className="flex flex-col justify-center items-center gap-2">
+          <label
+            htmlFor="setting1"
+            className="flex gap-2 items-center justify-center"
           >
-            Upload data
-          </a>
-          <a
-            className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md border border-solid hover:border-transparent flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#031D64] hover:text-white dark:hover:bg-[#205a83] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="/toolkit/"
-            target="_self"
-            rel="noopener noreferrer"
+            Setting 1
+            <input
+              id="setting1"
+              name="setting1"
+              type="text"
+              className="mb-4 px-2 py-1 border rounded-md cursor-pointer text-black bg-gray-50 dark:bg-white hover:border-green-400"
+            />
+          </label>
+          <label
+            htmlFor="setting2"
+            className="flex gap-2 items-center justify-center"
           >
-            Toolkit
-          </a>
-          <a
-            className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md border border-solid border-black/20 dark:border-white/40 flex items-center justify-center hover:bg-[#031D64] hover:text-white dark:hover:bg-[#205a83] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="#"
-            target="_self"
-            rel="noopener noreferrer"
+            Setting 2
+            <input
+              id="setting2"
+              name="setting2"
+              type="text"
+              className="mb-4 px-2 py-1 border rounded-md cursor-pointer text-black bg-gray-50 dark:bg-white hover:border-green-400"
+            />
+          </label>
+          <label
+            htmlFor="setting3"
+            className="flex gap-2 items-center justify-center"
           >
-            Settings
-          </a>
+            Setting 3
+            <input
+              id="setting3"
+              name="setting3"
+              type="text"
+              className="mb-4 px-2 py-1 border rounded-md cursor-pointer text-black bg-gray-50 dark:bg-white hover:border-green-400"
+            />
+          </label>
+          <label
+            htmlFor="setting4"
+            className="flex gap-2 items-center justify-center"
+          >
+            Setting 4
+            <input
+              id="setting4"
+              name="setting4"
+              type="text"
+              className="mb-4 px-2 py-1 border rounded-md cursor-pointer text-black bg-gray-50 dark:bg-white hover:border-green-400"
+            />
+          </label>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <Link href="/" className="hover:underline">
           Dashboard
         </Link>
-        <Link href="#" className="hover:underline">
-          Help
+        <Link href="/toolkit/" className="hover:underline">
+          Toolkit
         </Link>
         <Link href="/docs/" className="hover:underline">
           Docs
         </Link>
-        <Link href="/settings/" className="hover:underline">
+        <Link href="/settings/" className="underline">
           Settings
         </Link>
       </footer>

@@ -18,23 +18,23 @@ export default function Dashboard() {
 
         <table className="table-fixed rounded-md border-separate border-spacing-0 overflow-hidden">
           <thead>
-            <tr className="bg-gray-100 text-gray-900 dark:text-gray-100 dark:bg-[#171717]">
-              <th className="rounded-tl-md border border-gray-400 dark:border-gray-300 px-4 py-4">
+            <tr className="bg-gray-50 text-gray-900 dark:text-gray-100 dark:bg-[#171717]">
+              <th className="rounded-tl-md border border-gray-300 dark:border-gray-300 px-4 py-4">
                 ObjectName
               </th>
-              <th className="border border-gray-400 dark:border-gray-300 px-4 py-4">
+              <th className="border border-gray-300 dark:border-gray-300 px-4 py-4">
                 ContentValue
               </th>
-              <th className="border border-gray-400 dark:border-gray-300 px-4 py-4">
+              <th className="border border-gray-300 dark:border-gray-300 px-4 py-4">
                 ImportDate
               </th>
-              <th className="rounded-tr-md border border-gray-400 dark:border-gray-300 px-4 py-4">
+              <th className="rounded-tr-md border border-gray-300 dark:border-gray-300 px-4 py-4">
                 Amount
               </th>
             </tr>
           </thead>
           <tbody>
-            <tr className="bg-gray-100 text-gray-900 border dark:text-gray-100 dark:bg-[#171717]">
+            <tr className="bg-gray-50 text-gray-900 border dark:text-gray-100 dark:bg-[#171717]">
               <td className="border border-gray-300 px-4 py-2">
                 The Sliding Mr. Bones (Next Stop, Pottersville)
               </td>
@@ -44,13 +44,13 @@ export default function Dashboard() {
               <td className="border border-gray-300 px-4 py-2">1961</td>
               <td className="border border-gray-300 px-4 py-2">5.9</td>
             </tr>
-            <tr className="bg-gray-100 text-gray-900 border border-black dark:border-gray-300 dark:text-gray-100 dark:bg-[#171717]">
+            <tr className="bg-gray-50 text-gray-900 border border-black dark:border-gray-300 dark:text-gray-100 dark:bg-[#171717]">
               <td className="border border-gray-300 px-4 py-2">Witchy Woman</td>
               <td className="border border-gray-300 px-4 py-2">The Eagles</td>
               <td className="border border-gray-300 px-4 py-2">1972</td>
               <td className="border border-gray-300 px-4 py-2">8.1</td>
             </tr>
-            <tr className="bg-gray-100 text-gray-900 border border-black dark:border-gray-300 dark:text-gray-100 dark:bg-[#171717]">
+            <tr className="bg-gray-50 text-gray-900 border border-black dark:border-gray-300 dark:text-gray-100 dark:bg-[#171717]">
               <td className="border border-gray-300 px-4 py-2 rounded-bl-md">
                 Shining Star
               </td>
@@ -67,7 +67,7 @@ export default function Dashboard() {
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
-            className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md border border-solid hover:border-transparent flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#031D64] hover:text-white dark:hover:bg-[#205a83] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md border border-solid hover:border-transparent flex items-center justify-center bg-foreground text-background hover:bg-[#031D64] hover:text-white dark:bg-[#205a83] dark:hover:bg-[#205a83] dark:border-none gap-2 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="/uploader/"
             target="_self"
             rel="noopener noreferrer"
@@ -82,22 +82,14 @@ export default function Dashboard() {
           >
             Toolkit
           </a>
-          <a
-            className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md border border-solid border-black/20 dark:border-white/40 flex items-center justify-center hover:bg-[#031D64] hover:text-white dark:hover:bg-[#205a83] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="/settings/"
-            target="_self"
-            rel="noopener noreferrer"
-          >
-            Settings
-          </a>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <Link href="/" className="hover:underline">
+        <Link href="/" className="underline">
           Dashboard
         </Link>
-        <Link href="#" className="hover:underline">
-          Help
+        <Link href="/toolkit/" className="hover:underline">
+          Toolkit
         </Link>
         <Link href="/docs/" className="hover:underline">
           Docs

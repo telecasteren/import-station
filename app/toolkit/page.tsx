@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/scriptButton";
@@ -9,7 +9,16 @@ export default function Toolkit() {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [warning, setWarning] = useState<string | null>(null);
-  const response = null;
+  const response = "YES";
+
+  useEffect(() => {
+    if (success) {
+      const timer = setTimeout(() => {
+        setSuccess(null);
+      }, 1500);
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
 
   function handleScripts(
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
@@ -36,14 +45,16 @@ export default function Toolkit() {
     }
 
     if (response) {
-      setSuccess("Script has been successfully executed!");
-      return;
+      setTimeout(() => {
+        setSuccess("Script has been successfully executed!");
+        return;
+      }, 1000);
     }
   }
 
   return (
     <div className="grid grid-rows-[10px_1fr_10px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 justify-center items-center sm:items-start">
+      <main className="flex flex-col gap-[32px] row-start-2 justify-center items-center">
         <Image
           src="/cubit-blue.svg"
           alt="Cubit logo"
@@ -53,6 +64,11 @@ export default function Toolkit() {
         />
 
         <h1 className="text-4xl">Toolkit</h1>
+
+        <p>
+          There will be many paths. You must find the one that suits the needs
+          of your journey.
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <Button
@@ -86,8 +102,8 @@ export default function Toolkit() {
         <Link href="/" className="hover:underline">
           Dashboard
         </Link>
-        <Link href="#" className="hover:underline">
-          Help
+        <Link href="#" className="underline">
+          Toolkit
         </Link>
         <Link href="/docs/" className="hover:underline">
           Docs
