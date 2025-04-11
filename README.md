@@ -1,17 +1,22 @@
-# Cubit tools & imports
+# Cubit Toolkit for imports and documentation
+
+![image](/public/Screenshot%202025-04-11%20at%2016.23.19.png)
 
 ### Description
 
-Captain Imp. is here to serve his pirates! This app allows you to set rules for how to import data, run simple scripts for updating existing data and more.
+The import-station is here to serve! This app allows you to find the company documentation,</br>
+import client data, run simple scripts for updating existing data and more.
 </br>
 </br>
-Right now only the framework for a mockup is built. Actual working buttons and imports are not yet implemented.
+Right now only the framework for a mockup is built. Actual working script-buttons and imports are not yet implemented.
 
 #### Features (coming)
 
 - Upload data from CSV file
 - Run simple jobs for updates/fixes
 - Configure settings for how to import data
+- Documentation library
+- Data/documentation exports?
 
 ## Tech stack and setup
 

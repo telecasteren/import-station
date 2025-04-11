@@ -6,13 +6,16 @@ export default function ResidenceUploader() {
   return (
     <div className="grid grid-rows-[10px_1fr_10px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center">
-        <Image
-          src="/cubit-blue.svg"
-          alt="Cubit logo"
-          width={90}
-          height={19}
-          priority
-        />
+        <a href="/" target="_self" rel="noopener noreferrer">
+          <Image
+            src="/cubit-blue.svg"
+            alt="Cubit logo"
+            width={90}
+            height={19}
+            priority
+          />
+        </a>
+
         <h1>You are at Fire clients, specifically residence department</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center">
