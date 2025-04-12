@@ -1,6 +1,6 @@
 # Cubit Toolkit for imports and documentation
 
-![image](/public/Screenshot%202025-04-11%20at%2016.23.19.png)
+![image](/public/screenshot.png)
 
 ### Description
 
@@ -43,8 +43,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The pages auto-updates as you edit the file.
 
 ## Deployed on Vercel
 
-Deployed with Vercel. Run `vercel --prod` to overwrite later
+Deployed with Vercel. To deploy directly run `vercel --prod`, but Vercel is connected to the Github repository and<br/>
+`git push origin main` will trigger deployment build on Vercel.
