@@ -55,8 +55,10 @@ export default function SideBar() {
           <ul className="space-y-2 font-medium">
             <li>
               <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                href="/"
+                target="_self"
+                rel="noopener noreferrer"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white"
               >
                 <Image
                   src="/cubit-blue.svg"
@@ -73,7 +75,7 @@ export default function SideBar() {
             <li>
               <button
                 type="button"
-                className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className="cursor-pointer flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 data-collapse-toggle="dropdown-example"
                 onClick={() => toggleDropdown("dropdown1")}
               >
@@ -113,7 +115,7 @@ export default function SideBar() {
               >
                 <li>
                   <a
-                    href="#"
+                    href="/docs/onboarding/new_client/fire/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
                     Fire
@@ -121,7 +123,7 @@ export default function SideBar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/docs/onboarding/new_client/el/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
                     EL
@@ -129,7 +131,7 @@ export default function SideBar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/docs/onboarding/new_client/mhv/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
                     MHV
@@ -137,10 +139,10 @@ export default function SideBar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/docs/onboarding/new_client/other_domains/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    OTHER DOMAINS
+                    Other domains
                   </a>
                 </li>
               </ul>
@@ -150,7 +152,7 @@ export default function SideBar() {
             <li>
               <button
                 type="button"
-                className="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className="cursor-pointer flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 data-collapse-toggle="dropdown-example"
                 onClick={() => toggleDropdown("dropdown2")}
               >
@@ -190,7 +192,7 @@ export default function SideBar() {
               >
                 <li>
                   <a
-                    href="#"
+                    href="/docs/onboarding/new_employee/welcome/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
                     Welcome
@@ -206,10 +208,10 @@ export default function SideBar() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/docs/manual/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    Team Topology
+                    Employee manual
                   </a>
                 </li>
               </ul>
@@ -218,7 +220,7 @@ export default function SideBar() {
             {/* Rest of menu */}
             <li>
               <a
-                href="#"
+                href="/docs/onboarding/helpdesk/"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg

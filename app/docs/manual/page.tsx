@@ -26,6 +26,13 @@ export default function Manual() {
             height="100%"
           />
         </div>
+
+        <Link
+          href="/docs/"
+          className="text-lg underline hover:no-underline hover:text-[#205a83]"
+        >
+          Back to docs
+        </Link>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <Link href="/" className="hover:underline">
