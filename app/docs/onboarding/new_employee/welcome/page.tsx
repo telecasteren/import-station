@@ -54,19 +54,34 @@ export default function WelcomeEmployee() {
 
           <ul className="list-disc ml-6 mt-6">
             <li className="p-1">
-              <a className="hover:underline cursor-pointer" href="#">
+              <a
+                className="hover:underline cursor-pointer"
+                href="https://slack.com/intl/en-gb/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <b>Slack:</b>
               </a>{" "}
               Our daily Communication Platform.
             </li>
             <li className="p-1">
-              <a className="hover:underline cursor-pointer" href="#">
+              <a
+                className="hover:underline cursor-pointer"
+                href="https://academy.asana.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <b>Asana:</b>
               </a>{" "}
               Our Project Management tool.
             </li>
             <li className="p-1">
-              <a className="hover:underline cursor-pointer" href="#">
+              <a
+                className="hover:underline cursor-pointer"
+                href="https://support.google.com/a/users/?hl=en#topic=11499463"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <b>Google Workspace:</b>
               </a>{" "}
               The Universe of meetings and document sharing.

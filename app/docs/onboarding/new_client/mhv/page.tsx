@@ -15,26 +15,71 @@ export default function MHVOnboarding() {
 
         <section className="p-6">
           <div id="checklist">
-            <h2 className="text-xl">Process Checklist</h2>
+            <h2 className="text-xl">Prosess Sjekkliste</h2>
             <br />
-            <li>Startup meeting with the client</li>
-            <li>Inform the company of incoming client</li>
-            <li>Gather client information for tenant settings</li>
-            <li>Order the necessary from tech teams</li>
-            <li>Create and set up a test tenant</li>
+            <div>
+              <input type="checkbox" id="asanaSetup" name="asanaSetup" />
+              <label htmlFor="asanaSetup" className="ml-2">
+                Set the project up in
+                <a
+                  href="https://app.asana.com/0/portfolio/1209124150685516/1209125652748144"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="m-2 text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+                >
+                  Asana projects
+                </a>
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="clientMeeting" name="clientMeeting" />
+              <label htmlFor="clientMeeting" className="ml-2">
+                Plan startup meeting with the client
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="slackInform" name="slackInform" />
+              <label htmlFor="slackInform" className="ml-2">
+                Inform the company of incoming client in Slack
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="techOrder" name="techOrder" />
+              <label htmlFor="techOrder" className="ml-2">
+                Order the necessary from tech teams
+              </label>
+            </div>
+            <div>
+              <input type="checkbox" id="testTenant" name="testTenant" />
+              <label htmlFor="testTenant" className="ml-2">
+                Create and set up a test tenant
+              </label>
+            </div>
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-6">
+          <div className="mt-8 grid gap-2">
             <Link
               href="#"
-              className="text-amber-400 hover:underline hover:text-[#205a83]"
+              className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
-              For the client
+              Client preparation
+            </Link>
+            <Link
+              href="#"
+              className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+            >
+              Email templates
+            </Link>
+            <Link
+              href="#"
+              className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+            >
+              Conversion docs
             </Link>
 
             <Link
               href="/uploader/clients/fire/"
-              className="text-amber-400 hover:underline hover:text-[#205a83]"
+              className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
               Data import
             </Link>
