@@ -26,6 +26,13 @@ export const scriptInfo = [
   },
   {
     id: 4,
+    name: "UpdateHousingUnitFrequencies",
+    desc: "Does something healthy with sweep frequencies on chimney",
+    criteria: ["Target tenant name", "Frequency-mapping"],
+    requiresAuth: true,
+  },
+  {
+    id: 5,
     name: "CopyRiskAssessment",
     desc: "Copies all risk assessment modules from source tenant to target tenant",
     criteria: ["Source tenant name", "Target tenant name"],

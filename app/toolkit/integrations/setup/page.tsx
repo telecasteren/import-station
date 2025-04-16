@@ -1,32 +1,20 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import SideBar from "../components/toolkit/sideBar";
+import SideBar from "../../../components/toolkit/sideBar";
 
-export default function Toolkit() {
+export default function Integrations() {
   return (
     <div className="grid grid-rows-[10px_1fr_10px] items-center ml-[18%] justify-items-center min-h-screen p-8 pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 justify-center items-center">
-        <a href="/" target="_self" rel="noopener noreferrer">
-          <Image
-            src="/cubit-blue.svg"
-            alt="Cubit logo"
-            width={90}
-            height={19}
-            priority
-          />
-        </a>
-
         <div id="menu">
           <SideBar />
         </div>
 
-        <h1 className="text-4xl">Cubit Toolkit</h1>
+        <h1 className="text-4xl">Setup for Integrations</h1>
 
-        <h2>
-          There will be many paths. You must find the one that suits the needs
-          of your journey.
-        </h2>
+        <h2>How to set up xx and yy.</h2>
+
+        <p>Extract credentials and tokens.</p>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <Link href="/" className="hover:underline">

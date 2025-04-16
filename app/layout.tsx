@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Cubit AS Employee Platform",
-  description: "Platform for simple tasks and documentation library.",
+  description: "Platform for simple tasks and a library of documentation.",
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import SideBar from "../../../../components/sideBar";
+import SideBar from "../../../../components/onboarding/sideBar";
 
 export default function FireOnboarding() {
   return (

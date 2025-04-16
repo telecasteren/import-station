@@ -28,10 +28,10 @@ export default function Manual() {
         </div>
 
         <Link
-          href="/docs/"
+          href="/docs/onboarding/"
           className="text-lg underline hover:no-underline hover:text-[#205a83]"
         >
-          Back to docs
+          Back to onboarding
         </Link>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import SideBar from "../../../../components/sideBar";
+import SideBar from "../../../../components/onboarding/sideBar";
 
 export default function ELOnboarding() {
   return (

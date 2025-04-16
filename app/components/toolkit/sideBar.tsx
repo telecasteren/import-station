@@ -5,6 +5,7 @@ import Image from "next/image";
 type DropdownVisibility = {
   dropdown1: boolean;
   dropdown2: boolean;
+  dropdown3: boolean;
 };
 
 export default function SideBar() {
@@ -12,6 +13,7 @@ export default function SideBar() {
     useState<DropdownVisibility>({
       dropdown1: false,
       dropdown2: false,
+      dropdown3: false,
     });
 
   const toggleDropdown = (dropdown: keyof DropdownVisibility) => {
@@ -71,7 +73,7 @@ export default function SideBar() {
               </a>
             </li>
 
-            {/* New client */}
+            {/* Tenant */}
             <li>
               <button
                 type="button"
@@ -89,7 +91,7 @@ export default function SideBar() {
                   <path d="M6.5 0a2.5 2.5 0 0 0-2.45 2H3.5A1.5 1.5 0 0 0 2 3.5v13A1.5 1.5 0 0 0 3.5 18h11a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 14.5 2h-.55A2.5 2.5 0 0 0 11.5 0h-5Zm.5 2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5Zm5 0a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5ZM5.75 7a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6A.75.75 0 0 1 5.75 7Zm0 3a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6A.75.75 0 0 1 5.75 10Zm0 3a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3A.75.75 0 0 1 5.75 13Z" />
                 </svg>
                 <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
-                  New client
+                  Tenant
                 </span>
                 <svg
                   className="w-3 h-3"
@@ -115,40 +117,32 @@ export default function SideBar() {
               >
                 <li>
                   <a
-                    href="/docs/onboarding/new_client/fire/"
+                    href="/toolkit/tenant-scripts/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    Fire
+                    Create/update tenant
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/docs/onboarding/new_client/el/"
+                    href="/uploader/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    EL
+                    Import data
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/docs/onboarding/new_client/mhv/"
+                    href="/uploader/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    MHV
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/docs/onboarding/new_client/other_domains/"
-                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                  >
-                    Other domains
+                    Export data
                   </a>
                 </li>
               </ul>
             </li>
 
-            {/* New employee */}
+            {/* Copy stuff */}
             <li>
               <button
                 type="button"
@@ -166,7 +160,7 @@ export default function SideBar() {
                   <path d="M6.5 0a2.5 2.5 0 0 0-2.45 2H3.5A1.5 1.5 0 0 0 2 3.5v13A1.5 1.5 0 0 0 3.5 18h11a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 14.5 2h-.55A2.5 2.5 0 0 0 11.5 0h-5Zm.5 2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5Zm5 0a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5ZM5.75 7a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6A.75.75 0 0 1 5.75 7Zm0 3a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6A.75.75 0 0 1 5.75 10Zm0 3a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3A.75.75 0 0 1 5.75 13Z" />
                 </svg>
                 <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
-                  New employee
+                  Fix data
                 </span>
                 <svg
                   className="w-3 h-3"
@@ -192,10 +186,10 @@ export default function SideBar() {
               >
                 <li>
                   <a
-                    href="/docs/onboarding/new_employee/welcome/"
+                    href="/toolkit/copying/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    Welcome
+                    Copy data
                   </a>
                 </li>
                 <li>
@@ -203,15 +197,84 @@ export default function SideBar() {
                     href="#"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    Equipment
+                    Something cool
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/docs/manual/"
+                    href="#"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    Employee manual
+                    Other fixes
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            {/* API stuff */}
+            <li>
+              <button
+                type="button"
+                className="cursor-pointer flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                data-collapse-toggle="dropdown-example"
+                onClick={() => toggleDropdown("dropdown3")}
+              >
+                <svg
+                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 18 18"
+                >
+                  <path d="M6.5 0a2.5 2.5 0 0 0-2.45 2H3.5A1.5 1.5 0 0 0 2 3.5v13A1.5 1.5 0 0 0 3.5 18h11a1.5 1.5 0 0 0 1.5-1.5v-13A1.5 1.5 0 0 0 14.5 2h-.55A2.5 2.5 0 0 0 11.5 0h-5Zm.5 2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5Zm5 0a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1 0-1h1a.5.5 0 0 1 .5.5ZM5.75 7a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6A.75.75 0 0 1 5.75 7Zm0 3a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6A.75.75 0 0 1 5.75 10Zm0 3a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3A.75.75 0 0 1 5.75 13Z" />
+                </svg>
+                <span className="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
+                  Integrations
+                </span>
+                <svg
+                  className="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <ul
+                id="dropdown-example"
+                className={`${
+                  dropdownVisibility.dropdown3 ? "block" : "hidden"
+                } py-2 space-y-2`}
+              >
+                <li>
+                  <a
+                    href="/toolkit/integrations/"
+                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
+                    API's
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/toolkit/integrations/setup"
+                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
+                    Setup
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  >
+                    Settings
                   </a>
                 </li>
               </ul>
@@ -220,7 +283,7 @@ export default function SideBar() {
             {/* Rest of menu */}
             <li>
               <a
-                href="/docs/onboarding/helpdesk/"
+                href="/docs/"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -235,45 +298,8 @@ export default function SideBar() {
                     fill="white"
                   />
                 </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Helpdesk</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 26 26"
-                  stroke="#4B5563"
-                  strokeWidth="2"
-                >
-                  <rect width="26" height="26" rx="6" ry="6" fill="#4B5563" />
-
-                  <circle
-                    cx="11"
-                    cy="11"
-                    r="5"
-                    stroke="white"
-                    strokeWidth="2"
-                  />
-                  <line
-                    x1="15.5"
-                    y1="15.5"
-                    x2="20"
-                    y2="20"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-
                 <span className="flex-1 ms-3 whitespace-nowrap">
-                  Knowledge base
+                  Documentation
                 </span>
               </a>
             </li>
