@@ -10,13 +10,23 @@ import client data, run simple scripts for updating existing data and more.
 </br>
 Right now only the framework for a mockup is built. Actual working script-buttons and imports are not yet implemented.
 
-#### Features (coming)
+#### Features
 
-- Upload data from CSV file
-- Run simple jobs for updates/fixes
-- Configure settings for how to import data
+- Upload CSV file
 - Documentation library
+- Onboarding platform
+- User feedback platform
+
+#### Coming features
+
+- Storing uploaded data
+- Run simple jobs for updates/fixes
+- User ability to add requests and feedback
+
+#### Feature ideas
+
 - Data/documentation exports?
+- Configure settings for how to import data?
 
 ## Tech stack and setup
 
@@ -29,7 +39,13 @@ Right now only the framework for a mockup is built. Actual working script-button
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repo:
+
+```bash
+git@github.com:telecasteren/import-station.git
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
