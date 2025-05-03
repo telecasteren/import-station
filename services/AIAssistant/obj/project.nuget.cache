@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "oWvP9ewnMfo=",
+  "success": true,
+  "projectFilePath": "/Users/telecasteren/mockups/import-station/import-station/services/AIAssistant/AIAssistant.csproj",
+  "expectedPackageFiles": [
+    "/Users/telecasteren/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/Users/telecasteren/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/Users/telecasteren/.nuget/packages/restsharp/112.1.0/restsharp.112.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
