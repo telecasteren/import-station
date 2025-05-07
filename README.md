@@ -22,6 +22,7 @@ Right now only the framework for a mockup is built. Actual working script-button
 - Storing uploaded data
 - Run simple jobs for updates/fixes
 - User ability to add requests and feedback
+- AI search engine for local doc library
 
 #### Feature ideas
 
