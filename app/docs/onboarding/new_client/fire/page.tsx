@@ -2,12 +2,25 @@
 import Link from "next/link";
 import SideBar from "../../../../components/onboarding/sideBar";
 
+// className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start"
+
+const googleDocsPath =
+  "app/docs/onboarding/new_client/fire/googledocs/page.tsx";
+
 export default function FireOnboarding() {
+  // function openDocLists() {
+  //   const lists = [
+  //     document.getElementById("email-templates"),
+  //     document.getElementById("conversion-docs"),
+  //   ];
+
+  //   lists?.classList.toggle("hidden");
+  // }
+
   return (
     <div className="grid grid-rows-[10px_1fr_10px] md:ml-[18%] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-[32px] row-start-2 w-[80%] items-center">
         <h1 className="text-4xl">New fire client</h1>
-
         <div id="menu">
           <SideBar />
         </div>
@@ -55,21 +68,16 @@ export default function FireOnboarding() {
             </div>
           </div>
 
-          <div className="mt-8 grid gap-2">
+          <div className="mt-8 grid grid-cols-3 gap-6">
             <Link
-              href="#"
-              className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
-            >
-              Client preparation
-            </Link>
-            <Link
-              href="#"
-              className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+              href="#email-templates"
+              // onClick={openDocLists}
+              className="hidden text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
               Email templates
             </Link>
             <Link
-              href="#"
+              href="conversion-docs"
               className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
               Conversion docs
@@ -79,9 +87,57 @@ export default function FireOnboarding() {
               href="/uploader/clients/fire/"
               className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
-              Data import
+              Import data
             </Link>
           </div>
+        </section>
+        <section id="new-client-content" className="w-full">
+          <div id="email-templates">
+            <ul className="flex flex-wrap gap-2 flex-col mb-10">
+              <h3 className="text-xl">Fire clients</h3>
+              <Link
+                href="/docs/onboarding/new_client/fire/googledocs/startup-meeting"
+                className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+              >
+                Startup meeting template
+              </Link>
+              <Link
+                href="/docs/onboarding/fire/googledocs/data-mapping"
+                className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+              >
+                Data and mapping template
+              </Link>
+              <Link
+                href="/docs/onboarding/fire/googledocs/go-live"
+                className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+              >
+                Go-live template
+              </Link>
+            </ul>
+            <ul className="flex flex-wrap gap-2 flex-col">
+              <h3 className="text-xl">EL clients</h3>
+              <Link
+                href=""
+                className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+              >
+                Startup meeting template
+              </Link>
+              <Link
+                href=""
+                className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+              >
+                Data and mapping template
+              </Link>
+              <Link
+                href=""
+                className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
+              >
+                Go-live template
+              </Link>
+            </ul>
+          </div>
+
+          <div id="conversion-docs"></div>
         </section>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
