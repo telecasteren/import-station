@@ -24,8 +24,6 @@ export default function GoogleDocsViewer() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log("docInfo.id:", docInfo.id);
-
         if (!docInfo?.id) {
           setError("Document ID is missing from docMap.");
           setLoading(false);
@@ -36,6 +34,7 @@ export default function GoogleDocsViewer() {
         const res = await fetch(`/api/get-doc?id=${docInfo.id}`);
         const data = await res.json();
         setDocData(data);
+
         console.log("Doc response:", data);
       } catch (error) {
         setError("Failed to fetch the document.");

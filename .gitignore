@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# service account Google Docs API ----------------------- set up env variables to use in getGoogleDocs
+app/api/source/google_api/service-worker.json
