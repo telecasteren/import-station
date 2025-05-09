@@ -96,19 +96,19 @@ export default function FireOnboarding() {
             <ul className="flex flex-wrap gap-2 flex-col mb-10">
               <h3 className="text-xl">Fire clients</h3>
               <Link
-                href="/docs/onboarding/new_client/fire/googledocs/startup-meeting"
+                href="/docs/onboarding/new_client/googledocs/fire-startup-meeting"
                 className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
               >
                 Startup meeting template
               </Link>
               <Link
-                href="/docs/onboarding/fire/googledocs/data-mapping"
+                href="/docs/onboarding/new_client/googledocs/fire-data-mapping"
                 className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
               >
                 Data and mapping template
               </Link>
               <Link
-                href="/docs/onboarding/fire/googledocs/go-live"
+                href="/docs/onboarding/new_client/googledocs/fire-go-live"
                 className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
               >
                 Go-live template
@@ -117,19 +117,19 @@ export default function FireOnboarding() {
             <ul className="flex flex-wrap gap-2 flex-col">
               <h3 className="text-xl">EL clients</h3>
               <Link
-                href=""
+                href="/docs/onboarding/new_client/googledocs/el-startup-meeting"
                 className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
               >
                 Startup meeting template
               </Link>
               <Link
-                href=""
+                href="/docs/onboarding/new_client/googledocs/el-data-mapping"
                 className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
               >
                 Data and mapping template
               </Link>
               <Link
-                href=""
+                href="/docs/onboarding/new_client/googledocs/el-go-live"
                 className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
               >
                 Go-live template

@@ -1,19 +1,10 @@
 import { google, docs_v1 } from "googleapis";
-import path from "path";
 
-// const SERVICE_ACCOUNT_KEY_PATH = path.join(
-//   process.cwd(),
-//   "app/api/source/google_api/service-worker.json"
-// );
-
-export async function getGoogleDocs(
-  docId: string
-): Promise<docs_v1.Schema$Document | any> {
+export async function getGoogleDocsUrls(docId: string): Promise<string | null> {
   try {
     const privateKey =
       process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n") || "";
     const clientEmail = process.env.GOOGLE_CLIENT_EMAIL || "";
-    console.log(clientEmail);
 
     const auth = new google.auth.GoogleAuth({
       credentials: {
@@ -22,11 +13,6 @@ export async function getGoogleDocs(
       },
       scopes: ["https://www.googleapis.com/auth/documents.readonly"],
     });
-    // const auth = new google.auth.GoogleAuth({
-    //   keyFile: SERVICE_ACCOUNT_KEY_PATH,
-    //   scopes: ["https://www.googleapis.com/auth/documents.readonly"],
-    // });
-    console.log("GoogleAuth client created.");
 
     const authClient = (await auth.getClient()) as docs_v1.Options["auth"];
 
@@ -34,16 +20,18 @@ export async function getGoogleDocs(
       version: "v1",
       auth: authClient,
     });
-    console.log("Docs API client created.");
+    console.log("Houston we are live.");
 
     const res = await docs.documents.get({
       documentId: docId,
+      fields: "documentId,title",
     });
 
-    console.log("Full google docs API response:", res.data);
-    return res.data;
+    const docUrl = `https://docs.google.com/document/d/${res.data.documentId}/preview`;
+    console.log("API response:", docUrl);
+    return docUrl;
   } catch (error) {
-    console.error("Error in fetching the full document:", error);
+    console.error("Error in fetching document URL metadata:", error);
     throw error;
   }
 }
