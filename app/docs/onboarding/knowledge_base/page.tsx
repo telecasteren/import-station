@@ -16,6 +16,9 @@ export default function KnowledgeBase() {
             priority
           />
         </a>
+        <div id="menu">
+          <SideBar />
+        </div>
 
         <h1 className="text-4xl">Cubit Knowledge base</h1>
 
@@ -60,16 +63,13 @@ export default function KnowledgeBase() {
             Sanako
           </a>
           <a
-            className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md bg-[#9dbfcd] text-black flex items-center justify-center hover:bg-brightness-110 text-white font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
+            className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md bg-[#9dbfcd] text-black flex items-center justify-center hover:bg-brightness-110 dark:text-white font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
             href="#"
             target="_self"
             rel="noopener noreferrer"
           >
             Koti
           </a>
-        </div>
-        <div id="menu">
-          <SideBar />
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

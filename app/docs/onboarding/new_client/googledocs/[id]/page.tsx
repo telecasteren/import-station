@@ -111,7 +111,7 @@ export default function GoogleDocsViewer() {
         </a> */}
 
         <Link
-          href="/docs/onboarding/new_client/"
+          href="/docs/onboarding/"
           className="text-lg underline hover:no-underline hover:text-[#205a83]"
         >
           Back to onboarding

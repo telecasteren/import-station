@@ -7,7 +7,7 @@ export default function ELOnboarding() {
   return (
     <div className="grid grid-rows-[10px_1fr_10px] md:ml-[18%] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1 className="text-4xl">New EL client</h1>
+        <h1 className="text-4xl">Training</h1>
 
         <div id="menu">
           <SideBar />
@@ -15,12 +15,18 @@ export default function ELOnboarding() {
 
         <section className="p-6">
           <div id="checklist">
-            <h2 className="text-xl">Prosess Sjekkliste</h2>
+            <h2 className="text-xl">Training checklist</h2>
             <br />
+            <div>
+              <input type="checkbox" id="clientMeeting" name="clientMeeting" />
+              <label htmlFor="clientMeeting" className="ml-2">
+                Plan and invite client to live training
+              </label>
+            </div>
             <div>
               <input type="checkbox" id="asanaSetup" name="asanaSetup" />
               <label htmlFor="asanaSetup" className="ml-2">
-                Set the project up in
+                Add the training plan to the Asana project at
                 <a
                   href="https://app.asana.com/0/portfolio/1209124150685516/1209125652748144"
                   target="_blank"
@@ -32,27 +38,15 @@ export default function ELOnboarding() {
               </label>
             </div>
             <div>
-              <input type="checkbox" id="clientMeeting" name="clientMeeting" />
-              <label htmlFor="clientMeeting" className="ml-2">
-                Plan startup meeting with the client
-              </label>
-            </div>
-            <div>
-              <input type="checkbox" id="slackInform" name="slackInform" />
-              <label htmlFor="slackInform" className="ml-2">
-                Inform the company of incoming client in Slack
-              </label>
-            </div>
-            <div>
-              <input type="checkbox" id="techOrder" name="techOrder" />
-              <label htmlFor="techOrder" className="ml-2">
-                Order the necessary from tech teams
+              <input type="checkbox" id="testTenant" name="testTenant" />
+              <label htmlFor="testTenant" className="ml-2">
+                Test the tenant you'll use for training
               </label>
             </div>
             <div>
               <input type="checkbox" id="testTenant" name="testTenant" />
               <label htmlFor="testTenant" className="ml-2">
-                Create and set up a test tenant
+                Perform training and verify client knowledge
               </label>
             </div>
           </div>
@@ -62,26 +56,19 @@ export default function ELOnboarding() {
               href="#"
               className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
-              Client preparation
+              Training plan template
             </Link>
             <Link
               href="#"
               className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
-              Email templates
+              Training videos
             </Link>
             <Link
               href="#"
               className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
-              Conversion docs
-            </Link>
-
-            <Link
-              href="/uploader/clients/fire/"
-              className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
-            >
-              Data import
+              Onboarding Storylanes
             </Link>
           </div>
         </section>

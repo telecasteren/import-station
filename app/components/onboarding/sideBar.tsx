@@ -115,34 +115,26 @@ export default function SideBar() {
               >
                 <li>
                   <a
-                    href="/docs/onboarding/new_client/fire/"
+                    href="/docs/onboarding/new_client/startup/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    Fire
+                    Startup
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/docs/onboarding/new_client/el/"
+                    href="/docs/onboarding/new_client/training/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    EL
+                    Training
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/docs/onboarding/new_client/mhv/"
+                    href="/docs/onboarding/new_client/new_domains/"
                     className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
-                    MHV
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/docs/onboarding/new_client/other_domains/"
-                    className="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                  >
-                    Other domains
+                    New domains
                   </a>
                 </li>
               </ul>
