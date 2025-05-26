@@ -79,7 +79,7 @@ export default function FireOnboarding() {
             </Link>
 
             <Link
-              href="/uploader/clients/fire/"
+              href="/uploader/"
               className="text-amber-400 underline hover:no-underline hover:text-[#205a83]"
             >
               Import data

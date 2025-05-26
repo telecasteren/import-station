@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function FireClients() {
   return (
     <div className="grid grid-rows-[10px_1fr_10px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center">
+      <main className="flex flex-col gap-[32px] row-start-2 ">
         <Image
           src="/cubit-blue.svg"
           alt="Cubit logo"
@@ -42,7 +42,7 @@ export default function FireClients() {
         </div>
 
         <a
-          className="transition-transform duration-300 ease-in-out hover:scale-95 rounded-md border border-solid border-black/20 dark:border-white/40 flex items-center justify-center hover:bg-[#031D64] hover:text-white dark:hover:bg-[#031D64] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[180px]"
+          className="mx-auto transition-transform duration-300 ease-in-out hover:scale-95 rounded-md border border-solid border-black/20 dark:border-white/40 flex items-center justify-center hover:bg-[#031D64] hover:text-white dark:hover:bg-[#031D64] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[180px]"
           href="/uploader/"
           target="_self"
           rel="noopener noreferrer"

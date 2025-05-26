@@ -4,22 +4,28 @@ import Image from "next/image";
 import StatusItem from "./statusItem";
 
 type DropdownVisibility = {
-  dropdown1: boolean;
-  dropdown2: boolean;
+  requests: boolean;
+  services: boolean;
 };
 
 export default function SideBar() {
   const [dropdownVisibility, setDropdownVisibility] =
     useState<DropdownVisibility>({
-      dropdown1: false,
-      dropdown2: false,
+      requests: false,
+      services: false,
     });
 
-  const toggleDropdown = (dropdown: keyof DropdownVisibility) => {
-    setDropdownVisibility((prevState) => ({
-      ...prevState,
-      [dropdown]: !prevState[dropdown],
-    }));
+  const toggleDropdown = (dropdownMenu: keyof DropdownVisibility) => {
+    setDropdownVisibility((prevState) => {
+      const newState: DropdownVisibility = {
+        requests: false,
+        services: false,
+      };
+
+      newState[dropdownMenu] = !prevState[dropdownMenu];
+
+      return newState;
+    });
   };
 
   return (
@@ -78,7 +84,7 @@ export default function SideBar() {
                 type="button"
                 className="cursor-pointer flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 data-collapse-toggle="dropdown-example"
-                onClick={() => toggleDropdown("dropdown1")}
+                onClick={() => toggleDropdown("requests")}
               >
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -111,8 +117,8 @@ export default function SideBar() {
 
               <ul
                 id="dropdown-example"
-                className={`${
-                  dropdownVisibility.dropdown1 ? "block" : "hidden"
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                  dropdownVisibility.requests ? "max-h-[300px]" : "max-h-0"
                 } py-2 space-y-2`}
               >
                 <StatusItem
@@ -155,7 +161,7 @@ export default function SideBar() {
                 type="button"
                 className="cursor-pointer flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 data-collapse-toggle="dropdown-example"
-                onClick={() => toggleDropdown("dropdown2")}
+                onClick={() => toggleDropdown("services")}
               >
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -187,8 +193,8 @@ export default function SideBar() {
               </button>
               <ul
                 id="dropdown-example"
-                className={`${
-                  dropdownVisibility.dropdown2 ? "block" : "hidden"
+                className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                  dropdownVisibility.services ? "max-h-[300px]" : "max-h-0"
                 } py-2 space-y-2`}
               >
                 <li>
